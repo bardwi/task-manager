@@ -4,21 +4,21 @@
 
 ## 🚀 About the Project
 
-- The Task Management App is a powerful and user-friendly application designed to help you manage your tasks efficiently. 
+ The Task Management App is a powerful and user-friendly application designed to help you manage your tasks efficiently. 
   Built with cutting-edge technologies like React, TypeScript, Vite, and SWC, this app offers optimal performance and an excellent user experience. 
   With features such as CRUD operations, categorization and tagging, due dates and reminders, and drag-and-drop functionality for task prioritization, 
   this app serves as a comprehensive tool for personal and professional task management.
 ## 🌟Features
 
-- 🚀 Fast Development: Experience near-instant updates with Vite's HMR.
-- 🌊 Optimized Refresh: Choose between Babel and SWC for Fast Refresh using official Vite plugins.
-- 🛠 Strong Typing: Fully configured TypeScript for robust, type-safe code.
-- 🔍 Linting: ESLint setup for catching common issues, with recommendations for stricter type-aware linting.
-- 🧰 Flexibility: Extend and modify the configuration as per your project's requirements.
-- 📅 Due Dates and Reminders: Manage due dates and receive reminders for important tasks.
-- 🖱 Drag-and-Drop: Easily prioritize tasks using drag-and-drop functionality.
-- ✅ CRUD Operations: Create, Read, Update, and Delete tasks seamlessly.
-- 🏷 Categorization and Tagging: Organize tasks by categories and tags for better management.
+ 🚀 Fast Development: Experience near-instant updates with Vite's HMR.
+ 🌊 Optimized Refresh: Choose between Babel and SWC for Fast Refresh using official Vite plugins.
+ 🛠 Strong Typing: Fully configured TypeScript for robust, type-safe code.
+ 🔍 Linting: ESLint setup for catching common issues, with recommendations for stricter type-aware linting.
+ 🧰 Flexibility: Extend and modify the configuration as per your project's requirements.
+ 📅 Due Dates and Reminders: Manage due dates and receive reminders for important tasks.
+ 🖱 Drag-and-Drop: Easily prioritize tasks using drag-and-drop functionality.
+ ✅ CRUD Operations: Create, Read, Update, and Delete tasks seamlessly.
+ 🏷 Categorization and Tagging: Organize tasks by categories and tags for better management.
 
 ## 🛠 Technologies
 
