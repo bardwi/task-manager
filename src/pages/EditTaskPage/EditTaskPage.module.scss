@@ -1,0 +1,18 @@
+@use 'styles/index' as s;
+
+.page {
+  max-width: 600px;
+  margin: s.$sp-4 auto;
+  padding: 0 s.$sp-2;
+
+  h2 {
+    margin-bottom: s.$sp-3;
+    font-size: 1.5rem;
+    color: s.$text-primary;
+  }
+
+  .notFound {
+    padding: s.$sp-2;
+    color: s.$text-secondary;
+  }
+}

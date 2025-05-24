@@ -1,0 +1,19 @@
+@use 'styles/index' as s;
+
+.list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: s.$sp-3;
+  background: s.$grey-light;
+
+  h2 {
+    margin-top: s.$sp-3;
+    color: s.$text-primary;
+    font-size: 1.5rem;
+  }
+
+  p {
+    color: s.$text-secondary;
+    font-size: 1rem;
+  }
+}

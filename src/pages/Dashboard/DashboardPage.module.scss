@@ -1,0 +1,48 @@
+@use 'styles/index' as s;
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: s.$sp-3;
+  padding: s.$sp-3;
+  background: s.$grey-light;
+}
+
+.column {
+  @include s.column-bg(s.$white);
+  display: flex;
+  flex-direction: column;
+
+  &.todo    { @include s.column-bg(s.$blue); }
+  &.inProgress  { @include s.column-bg(s.$lavender); }
+  &.done    { @include s.column-bg(s.$mint); }
+
+ h3 {
+    margin: 0 0 s.$sp-2;
+    color: s.$white;
+    font-size: 1.2rem;
+  }
+
+  .taskList {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: s.$sp-2;
+  }
+
+  .cardWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: s.$sp-1;
+  }
+
+  .statusControls {
+    display: flex;
+    gap: s.$sp-1;
+  }
+
+  /* Move buttons */
+  .toInProgress { @include s.button(s.$darkblue, s.$white); }
+  .toDone       { @include s.button(s.$primary,   s.$white); }
+  .toTodo       { @include s.button(s.$grey-light, s.$text-primary); }
+}

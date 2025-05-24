@@ -1,0 +1,34 @@
+@use 'styles/index' as s;
+
+.form {
+  @include s.card;
+  margin-bottom: s.$sp-3;
+
+  h2 { 
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: s.$text-primary;
+  }
+
+  .field {
+    margin-bottom: s.$sp-2;
+    label { display: block; margin-bottom: s.$sp-1; font-weight: 500; color: s.$text-secondary; }
+    input, textarea {
+      width: 100%; padding: s.$sp-1; border: 1px solid s.$border; border-radius: s.$radius; font-size: 1rem;
+      line-height: 1.5;
+      &:focus { border-color: s.$blue; outline: none; }
+    }
+  }
+
+  .actions {
+    display: flex;
+    margin: s.$sp-2;
+    button {
+      @include s.card;
+      padding: s.$sp-2 s.$sp-3;
+      cursor: pointer;
+      &.save { background: s.$primary; color: s.$white; }
+      &.cancel { background: s.$danger; color: s.$white; margin-left: s.$sp-2; }
+    }
+  }
+}

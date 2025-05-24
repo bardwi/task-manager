@@ -1,0 +1,23 @@
+@use 'variables' as v;
+@mixin card {
+  background: v.$white;
+  border-radius: v.$radius;
+  padding: v.$sp-2;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@mixin button($bg, $color) {
+  background: $bg;
+  color: $color;
+  border: none;
+  padding: v.$sp-2 v.$sp-3;
+  border-radius: v.$radius;
+  cursor: pointer;
+  &:hover { background: darken($bg, 5%); }
+}
+
+@mixin column-bg($color) {
+  background: $color;
+  border-radius: v.$radius;
+  padding: v.$sp-2;
+}
