@@ -12,7 +12,6 @@
     /* Bundler mode */
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
@@ -24,6 +23,18 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
    // "noUncheckedSideEffectImports": true
+   "baseUrl": "./src",
+    "paths": {
+      "components/*": ["components/*"],
+      "utils/*": ["utils/*"],
+      "assets/*": ["assets/*"],
+      "types/*": ["types/*"],
+      "pages/*": ["pages/*"],
+      "hooks/*": ["hooks/*"],
+      "tasks/*": ["tasks/*"],
+      "layout/*": ["layout/*"],
+      "forms/*": ["forms/*"]
+    }
   },
   "include": ["src"]
 }

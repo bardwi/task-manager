@@ -1,0 +1,53 @@
+@use 'styles/index' as s;
+
+.item {
+  @include s.card;
+  display: flex;
+  justify-content: space-between;
+  border-left: 5px solid s.$border;
+
+  &.overdue {
+    border-color: s.$danger;
+
+    .content {
+      .details {
+        .due {
+          color: s.$danger;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+
+    input { margin-right: s.$sp-2; }
+
+    .details {
+      strong { display: block; font-size: 1rem; }
+      .category { color: s.$primary; }
+      .tags span {
+        background: s.$grey-light;
+        color: s.$blue;
+        padding: 2px 6px;
+        margin-right: s.$sp-1;
+        border-radius: s.$radius;
+        font-size: 0.75rem;
+      }
+      .due { margin-top: s.$sp-1; color: s.$text-secondary; font-size: 0.9rem; }
+    }
+  }
+
+  .actions {
+    button {
+      padding: s.$sp-1 s.$sp-2;
+      border: none;
+      border-radius: s.$radius;
+      cursor: pointer;
+      &.edit { background: s.$blue; color: s.$white; }
+      &.delete { background: s.$danger; color: s.$white; margin-left: s.$sp-1; }
+    }
+  }
+}

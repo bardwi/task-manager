@@ -12,3 +12,17 @@ h4,
 h5 {
   margin: 0;
 }
+
+/* Simple resets for forms and buttons */
+input,
+textarea,
+button {
+  font-family: inherit;
+}
+
+/* Layout helpers */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 1rem;
+}

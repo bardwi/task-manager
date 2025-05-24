@@ -1,0 +1,32 @@
+@use 'styles/index' as s;
+
+.header {
+  background: s.$darkblue;
+  color: s.$white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: s.$sp-3 s.$sp-3;
+  width: 100%;
+
+  .title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  nav a {
+    color: rgba(255,255,255,0.7);
+    margin-left: s.$sp-2;
+    &.active { color: s.$white }
+    text-decoration: none;
+  }
+  nav {
+    padding: s.$sp-1;
+  }
+  .add{
+    background: #e26441;
+    padding: s.$sp-2;
+    border-radius: 10px;
+    font-weight: 300;
+
+  }
+}
